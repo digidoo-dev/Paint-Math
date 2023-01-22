@@ -4,9 +4,10 @@ body {
 
 
 .form-control {
-    width: 100px;
+    width: 60px;
     display: inline-block;
     margin: auto;
+    border: 2px solid black;
 }
 
 #mathtypeselector {
@@ -31,9 +32,16 @@ table#mathcanvas td {
 }
 
 
-.xyinput, .linearinput, .quadraticinput {
+.xyinput, .linearinput, .quadraticinput, .exponentialinput, .logarithmicinput{
     display: inline-block;
 }
+
+
+#inputX, #inputY {
+    margin-right: 10px;
+}
+
+
 
 
 .highlited-cell {

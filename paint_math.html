@@ -20,6 +20,8 @@
                 <option value="0">Input X and Y</option>
                 <option value="1">Input linear equation</option>
                 <option value="2">Input quadratic equation</option>
+                <option value="3">Input exponential equation</option>
+                <option value="4">Input logarithmic equation</option>
             </select>
             <button class="btn btn-secondary" type="submit" id="buttonreset">Reset Graph</button>
         </div>
@@ -55,6 +57,19 @@
                 <Label class="form-label" for="quadraticInputC">X +</Label>
                 <input class="form-control" type="number" name="" id="quadraticInputC">
             </div>
+            
+            <div class="exponentialinput invisible">
+                <Label class="form-label" for="exponentialInputA">Y=</Label>
+                <input class="form-control" type="number" name="" id="exponentialInputA">
+                <Label class="form-label" for="exponentialInputA"><sup>X</sup></Label>
+            </div>
+            
+            <div class="logarithmicinput invisible">
+                <Label class="form-label" for="logarithmicInputA">Y=log</Label>
+                <input class="form-control" type="number" name="" id="logarithmicInputA">
+                <Label class="form-label" for="exponentialInputA">X</Label>
+            </div>
+            
             <button class="btn btn-primary" type="submit" id="showbutton">Show</button>
         </div>
 
