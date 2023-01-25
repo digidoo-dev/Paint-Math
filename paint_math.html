@@ -11,71 +11,68 @@
     <link rel="stylesheet" href="paint_math.css">
 </head>
 <body>
-    
-    <div class="container">
 
-        <h1>Welcome to paint math.</h1>
-        <div class="control">
-            <select class="form-select" name="" id="mathtypeselector">
-                <option value="0">Input X and Y</option>
-                <option value="1">Input linear equation</option>
-                <option value="2">Input quadratic equation</option>
-                <option value="3">Input exponential equation</option>
-                <option value="4">Input logarithmic equation</option>
-            </select>
-            <button class="btn btn-secondary" type="submit" id="buttonreset">Reset Graph</button>
-        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <canvas id="mathcanvas" width="500px" height="500px"></canvas>
+            </div>
+            <div class="col-lg-6">
+                <h1>Welcome to paint math.</h1>
+                <div class="control">
+                    <select class="form-select" name="" id="mathtypeselector">
+                        <option value="0">Input X and Y</option>
+                        <option value="1">Input linear equation</option>
+                        <option value="2">Input quadratic equation</option>                            <option value="3">Input exponential equation</option>
+                        <option value="4">Input logarithmic equation</option>
+                    </select>
+                    <button class="btn btn-secondary" type="submit" id="buttonreset">Reset Graph</button>
+                </div>
 
-        <table id="mathcanvas" align="center">
-
-
-        </table>
-
-
-        <div id="controlpanel">
+                <div id="controlpanel">
             
 
-            <div class="xyinput">
-                <Label class="form-label" for="inputX">X=</Label>
-                <input class="form-control" type="number" name="" id="inputX">
-                <Label class="form-label" for="inputY">Y=</Label>
-                <input class="form-control" type="number" name="" id="inputY">
-            </div>
-
-            <div class="linearinput invisible">
-                <Label class="form-label" for="linearInputA">Y=</Label>
-                <input class="form-control" type="number" name="" id="linearInputA">
-                <Label class="form-label" for="linearInputB">X +</Label>
-                <input class="form-control" type="number" name="" id="linearInputB">
-            </div>
-
-            <div class="quadraticinput invisible">
-                <Label class="form-label" for="quadraticInputA">Y=</Label>
-                <input class="form-control" type="number" name="" id="quadraticInputA">
-                <Label class="form-label" for="quadraticInputB">X<sup>2</sup> +</Label>
-                <input class="form-control" type="number" name="" id="quadraticInputB">
-                <Label class="form-label" for="quadraticInputC">X +</Label>
-                <input class="form-control" type="number" name="" id="quadraticInputC">
-            </div>
-            
-            <div class="exponentialinput invisible">
-                <Label class="form-label" for="exponentialInputA">Y=</Label>
-                <input class="form-control" type="number" name="" id="exponentialInputA">
-                <Label class="form-label" for="exponentialInputA"><sup>X</sup></Label>
-            </div>
-            
-            <div class="logarithmicinput invisible">
-                <Label class="form-label" for="logarithmicInputA">Y=log</Label>
-                <input class="form-control" type="number" name="" id="logarithmicInputA">
-                <Label class="form-label" for="exponentialInputA">X</Label>
-            </div>
-            
-            <button class="btn btn-primary" type="submit" id="showbutton">Show</button>
-        </div>
-
-    </div>
+                    <div class="xyinput">
+                        <Label class="form-label" for="inputX">X=</Label>
+                        <input class="form-control" type="number" name="" id="inputX">
+                        <Label class="form-label" for="inputY">Y=</Label>
+                        <input class="form-control" type="number" name="" id="inputY">
+                    </div>
         
+                    <div class="linearinput invisible">
+                        <Label class="form-label" for="linearInputA">Y=</Label>
+                        <input class="form-control" type="number" name="" id="linearInputA">
+                        <Label class="form-label" for="linearInputB">X +</Label>
+                        <input class="form-control" type="number" name="" id="linearInputB">
+                    </div>
         
+                    <div class="quadraticinput invisible">
+                        <Label class="form-label" for="quadraticInputA">Y=</Label>
+                        <input class="form-control" type="number" name="" id="quadraticInputA">
+                        <Label class="form-label" for="quadraticInputB">X<sup>2</sup> +</Label>
+                        <input class="form-control" type="number" name="" id="quadraticInputB">
+                        <Label class="form-label" for="quadraticInputC">X +</Label>
+                        <input class="form-control" type="number" name="" id="quadraticInputC">
+                    </div>
+                    
+                    <div class="exponentialinput invisible">
+                        <Label class="form-label" for="exponentialInputA">Y=</Label>
+                        <input class="form-control" type="number" name="" id="exponentialInputA">
+                        <Label class="form-label" for="exponentialInputA"><sup>X</sup></Label>
+                    </div>
+                    
+                    <div class="logarithmicinput invisible">
+                        <Label class="form-label" for="logarithmicInputA">Y=log</Label>
+                        <input class="form-control" type="number" name="" id="logarithmicInputA">
+                        <Label class="form-label" for="exponentialInputA">X</Label>
+                    </div>
+                    
+                    <button class="btn btn-primary" type="submit" id="showbutton">Show</button>
+                </div>
+        
+            </div>
+
+
+        </div>  
 
     <script src="paint_math.js"></script>
 </body>
